@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Một món quà dành cho anh</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="welcome-page">
+  <div class="floating-hearts" aria-hidden="true">♡　♥　♡　♥　♡　♥</div>
+  <main class="welcome-card">
+    <div class="small-flower">✿</div>
+    <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+    <h1>Gửi đến người<br><span>em thương</span></h1>
+    <p class="intro">Có một điều nhỏ xinh muốn gửi đến anh.<br>Hãy dành một chút thời gian để mở món quà này nhé!</p>
+    <a class="main-button" href="{{ url_for('love_letter') }}">Mở món quà <span>♡</span></a>
+    <p class="signature">Made with love ✨</p>
+  </main>
+  <div class="corner-note">just for you ♡</div>
+</body>
+</html>

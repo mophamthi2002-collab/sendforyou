@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  --blue: #65abc6;
+  --deep: #8e405d;
+  --cream: #fffaf8;
+  --text: #654653;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+.welcome-page {
+  min-height: 100vh; display: grid; place-items: center; overflow: hidden;
+  padding: 28px;
+  background: radial-gradient(circle at 15% 20%, #fff 0 5%, transparent 28%),
+              linear-gradient(135deg, #18719a, #74cbee 55%, #e3dddf);
+  position: relative;
+}
+.welcome-card {
+  width: min(650px, 100%); padding: 64px 35px; text-align: center;
+  border: 1px solid #ffffffc9; border-radius: 30px;
+  background: #ffffffb8; box-shadow: 0 22px 70px #a85b7420;
+  backdrop-filter: blur(8px); position: relative; z-index: 1;
+}
+.small-flower { color: var(--blue); font-size: 38px; }
+.eyebrow { letter-spacing: 3px; font-size: 11px; font-weight: 700; color: #77bbd1; }
+h1, h2 { font-family: 'Playfair Display', Georgia, serif; }
+.welcome-card h1 { font-size: clamp(42px, 8vw, 68px); line-height: 1.12; margin: 18px 0; color: #744456; }
+h1 span, .love-line { color: var(--blue); }
+.intro { line-height: 1.9; color: #876b76; margin: 22px 0 30px; }
+.main-button {
+  display: inline-flex; gap: 12px; align-items: center; justify-content: center;
+  padding: 14px 26px; border-radius: 999px; text-decoration: none;
+  color: white; background: linear-gradient(120deg, #5fb1ca, #85ccd5);
+  box-shadow: 0 9px 22px #c76e8b40; transition: transform .2s, box-shadow .2s;
+}
+.main-button:hover { transform: translateY(-3px); box-shadow: 0 13px 25px #c76e8b55; }
+.signature { margin: 30px 0 0; font-size: 12px; color: #7ecab8; }
+.floating-hearts { position: absolute; inset: 8% 0 auto; text-align: center; color: #86d0c2; opacity: .38; font-size: 30px; letter-spacing: 18px; }
+.corner-note { position: absolute; bottom: 25px; right: 30px; color: #6c918f; font-family: Georgia, serif; font-style: italic; }
+
+.letter-page { min-height: 100vh; background: #fff8f6; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 22px max(6vw, 20px); color: #b4778d; font-size: 12px; letter-spacing: 2px; }
+.back-link { color: var(--deep); text-decoration: none; letter-spacing: 0; font-size: 14px; }
+.letter-wrap { width: min(900px, 92%); margin: 38px auto 70px; text-align: center; }
+.letter-wrap h1 { font-size: clamp(35px, 6vw, 52px); margin: 10px 0; color: #744456; }
+.letter-wrap h1 span { color: var(--blue); }
+.subtitle { color: #987987; margin-bottom: 35px; }
+.photo-grid { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 16px; align-items: center; }
+.photo { margin: 0; padding: 10px 10px 15px; background: white; border-radius: 12px; box-shadow: 0 9px 28px #86536712; transform: rotate(1deg); }
+.photo:nth-child(2) { transform: rotate(-2deg); }
+.photo img { display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 7px; }
+.photo figcaption { padding-top: 12px; color: #987987; font-family: Georgia, serif; font-style: italic; font-size: 13px; }
+.message-card {
+  max-width: 700px; margin: 48px auto 30px; padding: 38px clamp(22px, 6vw, 58px);
+  background: white; border: 1px solid #f5e2e7; border-radius: 22px;
+  box-shadow: 0 14px 45px #8b52600d; text-align: left; line-height: 1.9;
+}
+.envelope-icon { text-align: center; font-size: 35px; }
+.message-card .eyebrow, .message-card h2 { text-align: center; }
+.message-card h2 { color: #744456; font-size: 27px; margin: 12px 0 25px; }
+.message-card p { color: #806a74; }
+.message-card .love-line { text-align: center; font-family: 'Playfair Display', Georgia, serif; font-size: 25px; margin-top: 28px; }
+.message-card .from { text-align: right; font-style: italic; font-size: 13px; }
+.end-note { color: #78bdb8; font-family: Georgia, serif; font-style: italic; margin: 35px 0 20px; }
+footer { text-align: center; padding: 20px; color: #bd91a0; font-size: 12px; }
+@media (max-width: 650px) {
+  .welcome-card { padding: 48px 22px; }
+  .photo-grid { grid-template-columns: 1fr 1fr; }
+  .photo-large { grid-column: 1 / -1; width: 75%; justify-self: center; }
+  .topbar { gap: 15px; font-size: 10px; }
+}

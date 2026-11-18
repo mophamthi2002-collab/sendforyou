@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lá thư dành cho anh</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="letter-page">
+  <header class="topbar">
+    <a href="{{ url_for('home') }}" class="back-link">← Trang đầu</a>
+    <span>♡ A LETTER FOR YOU ♡</span>
+  </header>
+
+  <main class="letter-wrap">
+    <p class="eyebrow">TO MY FAVORITE PERSON</p>
+    <h1>Một chút yêu thương <span>♡</span></h1>
+    <p class="subtitle">Dành riêng cho một người thật đặc biệt.</p>
+
+    <section class="photo-grid">
+      <figure class="photo photo-large">
+        <img src="{{ url_for('static', filename='images/photo1.jpg') }}" alt="Ảnh kỷ niệm 1">
+        <figcaption>Những khoảnh khắc đáng nhớ</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="{{ url_for('static', filename='images/photo2.jpg') }}" alt="Ảnh kỷ niệm 2">
+        <figcaption>Một ngày thật xinh</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="{{ url_for('static', filename='images/photo3.jpg') }}" alt="Ảnh kỷ niệm 3">
+        <figcaption>Và thật nhiều thương yêu</figcaption>
+      </figure>
+    </section>
+
+    <section class="message-card">
+      <div class="envelope-icon">💌</div>
+      <p class="eyebrow">MY DEAR</p>
+      <h2>Gửi anh, người đặc biệt của em</h2>
+      <p>
+        Happy 19/11 anh yêu! ❤️ <p>Chúc anh luôn mạnh khỏe, công việc suôn sẻ, giám sát công trình nào cũng thuận lợi, 
+        nghiệm thu đâu PASS đó, không phát sinh bug hay sự cố ngoài dự kiến. Mong rằng mọi dự án trong cuộc sống của anh đều đúng tiến độ, 
+        KPI tăng đều và deadline không bao giờ dí sát nút. Chúc anh luôn giữ phong độ của một người giám sát có tâm, còn em thì mong anh
+        đừng mang mindset đi làm về nhà, cái gì cũng đòi kiểm tra, nghiệm thu rồi mới cho PASS nhé!</p> Chúc tình yêu của chúng mình luôn là bản thiết 
+        kế hoàn hảo, nền móng vững chắc, kết cấu bền lâu, test case nào cũng PASS, không bug, không conflict, không cần rollback hay hotfix giữa chừng. Có phát sinh thì cùng nhau 
+        fix, có thay đổi thì cùng nhau update, miễn là phiên bản tình yêu này luôn tương thích và được support trọn đời. 
+        Chúc anh 19/11 thật vui, ngày càng thành công và luôn giữ vững phong độ nhé! ❤️</p>
+        <p>
+        Cảm ơn anh vì đã xuất hiện và làm cho những ngày bình thường
+        trở nên đáng yêu hơn. Mong rằng mỗi ngày của anh đều có thật
+        nhiều niềm vui, nụ cười và những điều dịu dàng.
+        </p>
+      </p>
+      <p class="love-line">I LOVE YOU! ♡</p>
+      <p class="from">— emo xinh iuuu  —</p>
+    </section>
+
+    <p class="end-note">Món quà nhỏ, tình cảm to ♡</p>
+    <a class="main-button" href="{{ url_for('home') }}">Quay lại trang đầu</a>
+  </main>
+  <footer>Made with ♡ just for you</footer>
+</body>
+</html>
